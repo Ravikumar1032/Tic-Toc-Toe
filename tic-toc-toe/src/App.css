@@ -1,0 +1,76 @@
+/* src/App.css */
+
+.background-container {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ), url('https://wallpapers.com/images/featured/gaming-zl3vngxpvv04a30j.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.human-vs-human, .human-vs-computer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.human-vs-human:hover, .human-vs-computer:hover {
+  transform: scale(1.05); /* Slightly scale the entire card on hover */
+}
+
+.human-vs-human .card-title, .human-vs-computer .card-title {
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth text scaling */
+}
+
+.human-vs-human:hover .card-title, .human-vs-computer:hover .card-title {
+  transform: scale(1.2); /* Scale the text on hover */
+}
+
+.human-vs-human {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('https://www.shutterstock.com/image-photo/young-man-joystick-playing-video-260nw-661841062.jpg');
+}
+
+.human-vs-computer {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('https://miro.medium.com/v2/resize:fit:1400/1*Kp2sjqCDaF1n6uljgYd-ag.png');
+}
+.background-with-overlay .container {
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for transparency */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* src/App.css */
+.background-with-overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.shutterstock.com/image-photo/young-man-joystick-playing-video-260nw-661841062.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-with-overlay .container {
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for transparency */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Box shadow for the form container */
+}
+
+.background-with-overlay .form-group label {
+  color: #333;
+}
+
+.background-with-overlay .form-control {
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for the input field background */
+}
